@@ -1,3 +1,4 @@
+import { AlertModalService } from './../../shared/alert-modal.service';
 import { AlertModalComponent } from './../../shared/alert-modal/alert-modal.component';
 import { CursosService } from './../cursos.service';
 import { Component, OnInit } from '@angular/core';
@@ -21,8 +22,9 @@ export class CursosListaComponent implements OnInit {
   error$ = new Subject<boolean>();
 
   constructor(
-              private service:CursosService,
-              private modalService:BsModalService) { }
+              private service: CursosService,
+              // private modalService:BsModalService,
+              private alertModalService: AlertModalService) { }
 
   ngOnInit() {
     this.onRefresh();
@@ -40,9 +42,7 @@ export class CursosListaComponent implements OnInit {
   }
 
   handleError() {
-    this.bsModalRef = this.modalService.show(AlertModalComponent);
-    this.bsModalRef.content.type = 'danger';
-    this.bsModalRef.content.message = 'Erro Ao carregar cursos, volte mais tarde';
+    this.alertModalService.showErroDanger('Erro Ao carregar cursos, volte mais tarde');
   }
 
 

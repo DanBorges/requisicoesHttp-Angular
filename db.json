@@ -7,6 +7,14 @@
     {
       "nome": "Java",
       "id": 3
+    },
+    {
+      "nome": "Vue 2.0",
+      "id": 4
+    },
+    {
+      "nome": "React",
+      "id": 5
     }
   ]
 }
