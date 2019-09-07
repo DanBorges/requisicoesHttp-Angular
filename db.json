@@ -15,6 +15,14 @@
     {
       "nome": "React",
       "id": 5
+    },
+    {
+      "id": 6,
+      "nome": "PHP 7"
+    },
+    {
+      "id": 7,
+      "nome": "Ruby"
     }
   ]
 }
