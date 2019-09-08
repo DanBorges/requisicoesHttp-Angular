@@ -1,3 +1,4 @@
+import { Cursos2Service } from './../cursos2.service';
 import { AlertModalService } from './../../shared/alert-modal.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
@@ -18,7 +19,7 @@ export class CursosFormComponent implements OnInit {
 
   constructor(
               private fb: FormBuilder,
-              private cursosService: CursosService,
+              private cursosService: Cursos2Service,
               private alertModalService: AlertModalService,
               private location: Location,
               private route: ActivatedRoute
@@ -76,6 +77,8 @@ export class CursosFormComponent implements OnInit {
       },
       error => this.alertModalService.showErroDanger(msgErro),
     )
+
+
 
     // console.log(this.form.value);
     // this.subbimited = true;

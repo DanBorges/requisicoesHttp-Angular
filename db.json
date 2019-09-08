@@ -13,16 +13,16 @@
       "id": 4
     },
     {
-      "nome": "React",
-      "id": 5
+      "id": 5,
+      "nome": "Play Framework"
     },
     {
       "id": 6,
-      "nome": "PHP 7"
+      "nome": "React"
     },
     {
       "id": 7,
-      "nome": "Ruby"
+      "nome": "React Native"
     }
   ]
 }

@@ -29,7 +29,7 @@
                   <button class="btn btn-outline-warning mb-1 btn-sm" (click)="onEdit(curso.id)">
                     Atualizar
                   </button>
-                  <button class="btn btn-outline-danger mb-1 btn-sm">
+                  <button class="btn btn-outline-danger mb-1 btn-sm" (click)="onDelete(curso)">
                       Remover
                     </button>
 
@@ -50,3 +50,12 @@
   </div>
   </div>
 </div>
+
+<ng-template #deleteModal>
+  <div class="modal-boby text-center">
+    <p>Do you want confirm?</p>
+    <button type="button" class="btn btn-default" (click)="onConfirmDelete()"> yes</button>
+    <button type="button" class="btn btn-primary" (click)="onDeclineDelete()"> no</button>
+
+  </div>
+</ng-template>
