@@ -14,7 +14,7 @@ export class UploadFileComponent implements OnInit {
 
   onChange(event) {
     console.log(event);
-    const selectedFiles = <FileList> event.srcElement.files;
+    // const selectedFiles = <FileList> event.srcElement.files;
     document.getElementById('customFileLabel').innerHTML = selectedFiles[0].name;
 
     const filenames = [];
