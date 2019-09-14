@@ -8,6 +8,10 @@ const routes: Routes = [
   },
   {
     path: 'cursos', loadChildren: './cursos/cursos.module#CursosModule'
+  },
+
+  {
+    path: 'upload', loadChildren: './upload-file/upload-file.module#UploadFileModule'
   }
 ];
 
