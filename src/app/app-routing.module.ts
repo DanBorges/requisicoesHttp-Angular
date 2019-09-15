@@ -1,3 +1,4 @@
+import { ReactiveSearchModule } from './reactive-search/reactive-search.module';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -12,6 +13,11 @@ const routes: Routes = [
 
   {
     path: 'upload', loadChildren: './upload-file/upload-file.module#UploadFileModule'
+  },
+
+  {
+    path: 'busca-reativa',
+    loadChildren: () => import('./reactive-search/reactive-search.module').then(m => m.ReactiveSearchModule)
   }
 ];
 
